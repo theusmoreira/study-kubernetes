@@ -12,3 +12,6 @@
 
 ## ConfigMap
  - Responsável por armazenar essas configurações que nós precisamos utilizar dentro de determinados pods, determinados recursos. Nós podemos guardar dentro deles para não acoplarmos o nosso recurso com informações de configuração, por isso um ConfigMap.
+
+ ## ReplicaSets
+ ## Deployments
