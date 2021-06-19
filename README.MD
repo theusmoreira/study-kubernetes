@@ -15,3 +15,9 @@
 
  ## ReplicaSets
  ## Deployments
+
+ ## Volumes
+ - Persistents Volumes
+ - Persistent Volume Claim
+ - Storage Classes
+ 

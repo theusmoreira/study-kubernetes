@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-volume
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+      volumeMounts:
+        - mountPath: /volume-dentro-container
+          name: segundo-volume
+    - name: node-container
+      image: node:alpine
+      volumeMounts:
+        - mountPath: /volume-dentro-container
+          name: segundo-volume
+  volumes:
+    - name: segundo-volume
+      hostPath:
+        path: /home/segundo-volume
+        type: DirectoryOrCreate
