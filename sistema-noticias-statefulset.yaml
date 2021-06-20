@@ -15,6 +15,13 @@ spec:
           image: aluracursos/sistema-noticias:1
           ports:
             - containerPort: 80
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            periodSeconds: 10
+            failureThreshold: 3
+            initialDelaySeconds: 20
           volumeMounts:
             - name: imagens
               mountPath: /var/www/html/uploads
