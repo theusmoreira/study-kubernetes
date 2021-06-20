@@ -21,3 +21,5 @@
  - Persistent Volume Claim
  - Storage Classes
  
+ ### Stateful Set
+ 
