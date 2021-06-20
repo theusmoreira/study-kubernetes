@@ -23,3 +23,9 @@
  
  ### Stateful Set
  
+
+ ## Probes
+ - Liveness
+ - Readiness
+ - Startup
+ 
