@@ -22,6 +22,13 @@ spec:
             periodSeconds: 10
             failureThreshold: 3
             initialDelaySeconds: 20
+          readinessProbe:
+            httpGet:
+              path: /inserir_noticias.php
+              port: 80
+            periodSeconds: 10
+            failureThreshold: 5
+            initialDelaySeconds: 3
           volumeMounts:
             - name: imagens
               mountPath: /var/www/html/uploads
